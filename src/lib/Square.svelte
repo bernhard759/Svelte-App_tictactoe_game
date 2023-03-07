@@ -32,12 +32,15 @@
     background-color: steelblue;
     color: white;
     font-size: 2.5em;
-    font-weight: blod;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
+    /*no button*/
     border-radius: 0;
+    border: none;
+    padding: 0;
   }
 
   .square.winner {
