@@ -19,7 +19,7 @@
   let winningCombo = [];
 
   // Game message
-  let msg = "Test";
+  let msg = "";
   let showMsg = false;
   let msgTimeout: ReturnType<typeof setTimeout>;
 
@@ -55,6 +55,7 @@
         squares[a] === squares[c]
       ) {
         console.log("winner");
+        msg = `${turn} wins!`;
         winningCombo = [a, b, c];
         userAction = false;
         setTimeout(() => (playing = false), 1000);
@@ -71,6 +72,7 @@
     let draw = squares.filter((s) => s === "").length === 0;
     if (draw) {
       console.log("draw");
+      msg = "Draw!";
       playing = false;
       userAction = false;
       showMsg = true;
