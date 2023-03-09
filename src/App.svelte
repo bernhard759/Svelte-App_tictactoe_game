@@ -5,15 +5,9 @@
 
 <main>
   <h1>Tictactoe game</h1>
-  <p class="subheader">Built with SvelteJS</p>
+  <h2>Built with SvelteJS</h2>
   <!-- Board -->
   <Board></Board>
   <!-- Gameover -->
 </main>
 
-<style>
-.subheader {
-  font-size: 1.5rem;
-  margin-bottom: 2em;
-}
-</style>
